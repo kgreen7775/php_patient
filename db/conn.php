@@ -1,16 +1,16 @@
 <?php 
 
-$host='127.0.0.1';
-$db='appointment_db';
-$user='root';
-$pass='';
-$charset='utf8mb4';
-
-//$host='b0tgfpkm1nuzvojebjvb-mysql.services.clever-cloud.com';
-//$db='b0tgfpkm1nuzvojebjvb';
-//$user='uzd4gsef776t0tyf';
-//$pass='spWr32xjmJOnVbQzQ0JP';
+//$host='127.0.0.1';
+//$db='appointment_db';
+//$user='root';
+//$pass='';
 //$charset='utf8mb4';
+
+$host='bkdtagodxy5uusw9ursl-mysql.services.clever-cloud.com';
+$db='bkdtagodxy5uusw9ursl';
+$user='uc7hcejio7p1rzpc';
+$pass='WaLR1Do4A0FjRDPQN1SK';
+$charset='utf8mb4';
 
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
