@@ -52,7 +52,7 @@ $title='confirm';
 
 <!--print values that were passed from the action using 'post'-->
  <div class="card" style="width: 18rem;">
-  <img src="<?php echo $destination ?>" class="card-img-top" alt="img/person.jpg">
+  <img src="<?php echo $destination ?>" class="card-img-top"> <!-- alt="img/person.jpg" -->
   <div class="card-body">
     <h5 class="card-title"> 
     <?php echo  $_POST['firstname'].' '.$_POST['lastname']; ?> 
