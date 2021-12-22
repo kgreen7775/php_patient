@@ -13,7 +13,7 @@ $title='records';
 ?>
 
 <table class="table table-striped">
-    <tr> <!-- attendee table headers -->
+    <tr> <!-- table headers -->
     <th>#</th>
     <th>First Name</th>
     <th>Last Name</th>

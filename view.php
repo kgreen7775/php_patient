@@ -8,7 +8,7 @@ $title='View Record';
   require_once 'includes/check.php';
   require_once 'db/conn.php';
 
-  // Get attendee by ID
+  // Get Patient by ID
   
   if(!isset($_GET['id'])) 
   {
@@ -41,6 +41,10 @@ $title='View Record';
         Gender:<?php echo  $results['Gender']; ?>
     </p>
   
+    <p class="card-text">
+        Address:<?php echo  $results['Home']; ?>
+    </p>
+
     <p class="card-text">
         Login Email:<?php echo  $results['Email']; ?>
     </p>

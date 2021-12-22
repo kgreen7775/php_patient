@@ -54,6 +54,13 @@ $title='edit';
        </div>
       </div>
 
+      <div class="mb-3"> <!-- ADDRESS DIV-->
+        <label for="gender" class="form-label">Gender</label>
+        <input type="text" class="form-control" value="<?php echo $patients['Home']; ?>" id="home" name="home" aria-describedby="home">
+       <div class="form-text">Your Address 
+       </div>
+      </div>
+
       <div class="mb-3"> <!-- TREATMENT DIV-->
       <select class="form-control" aria-label="treat" id="treat" name="treat">
        

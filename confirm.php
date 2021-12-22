@@ -17,6 +17,7 @@ $title='confirm';
     $dob=$_POST['dob'];
     $gender=$_POST['gender'];
     $phone=$_POST['phone'];
+    $home=$_POST['home'];
     $email=$_POST['email'];
     $treat=$_POST['treat'];
 
@@ -31,7 +32,7 @@ $title='confirm';
 
 
    
-    $issuccess=$crud->insertPatient($fname,$lname,$dob,$gender,$phone,$email,$treat,$imgpath);
+    $issuccess=$crud->insertPatient($fname,$lname,$dob,$gender,$phone,$home,$email,$treat,$imgpath);
     $TypeOfTreatment = $crud->getTreatmentByID($treat);
     if($issuccess)
     {
@@ -64,6 +65,9 @@ $title='confirm';
     </p>
     <p class="card-text">
         Gender:<?php echo  $_POST['gender']; ?>
+    </p>
+    <p class="card-text">
+        Address:<?php echo  $_POST['home']; ?>
     </p>
     <p class="card-text">
         Login Email:<?php echo  $_POST['email']; ?>

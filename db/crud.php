@@ -11,11 +11,11 @@ class crud
         $this ->db = $conn;
     }
     // function that creates records for database
-    public function insertPatient($fname,$lname,$dob,$gender,$phone,$email,$treat,$imgpath) //php var
+    public function insertPatient($fname,$lname,$dob,$gender,$phone,$home,$email,$treat,$imgpath) //php var
     {
        try
        {                                        //database                  
-        $sql="INSERT INTO patients (FirstName, LastName, DateOfBirth,Gender,Contact,Email,Treatment_id,Img_Path) VALUES(:fname,:lname,:dob,:gender,:phone,:email,:treat,:imgpath)";
+        $sql="INSERT INTO patients (FirstName, LastName, DateOfBirth,Gender,Contact,Home,Email,Treatment_id,Img_Path) VALUES(:fname,:lname,:dob,:gender,:phone,:home,:email,:treat,:imgpath)";
        // binding all placeholders to actual values
         $stmt=$this->db->prepare($sql);
         $stmt->bindparam(':fname',$fname);
@@ -23,6 +23,7 @@ class crud
         $stmt->bindparam(':dob',$dob);
         $stmt->bindparam(':gender',$gender);
         $stmt->bindparam(':phone',$phone);
+        $stmt->bindparam(':home',$home);
         $stmt->bindparam(':email',$email);
         $stmt->bindparam(':treat',$treat);
         $stmt->bindparam(':imgpath',$imgpath);
@@ -94,9 +95,9 @@ class crud
             }
     }
 
-    public function editPatient($id,$fname,$lname,$dob,$gender,$phone,$email,$treat)
+    public function editPatient($id,$fname,$lname,$dob,$gender,$phone,$home,$email,$treat)
     { 
-        $sql = "UPDATE `patient` SET `FirstName`=:fname,`LastName`=:lname,`DateOfBirth`=:dob,`Gender`=:gender,`Contact`=:phone,`Email`=:email,
+        $sql = "UPDATE `patient` SET `FirstName`=:fname,`LastName`=:lname,`DateOfBirth`=:dob,`Gender`=:gender,`Contact`=:phone,`Home`=:home,`Email`=:email,
         `Treatment_id`=:treat 
         WHERE Patient_id = :id ";
         try
@@ -110,6 +111,7 @@ class crud
             $stmt->bindparam(':dob',$dob);
             $stmt->bindparam(':gender',$gender);
             $stmt->bindparam(':phone',$phone);
+            $stmt->bindparam(':home',$home);
             $stmt->bindparam(':email',$email);
             $stmt->bindparam(':treat',$treat);
 

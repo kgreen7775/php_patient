@@ -45,6 +45,14 @@ $title='index';
        </div>
       </div>
 
+      <div class="mb-3"> <!-- ADDRESS DIV-->
+        <label for="home" class="form-label">Address</label>
+        <input required type="text" class="form-control" id="home" name="home" aria-describedby="home">
+       <div class="form-text">Your Address 
+       </div>
+      </div>
+
+
       <div class="mb-3"> <!-- TREATMENT DIV-->
       <select class="form-control" aria-label="treatment" id="treat" name="treat">
        
@@ -75,7 +83,6 @@ $title='index';
       <br/> 
       <!-- PICK UPLOAD DIV-->
       <div class="mb-3"> 
-        <!--<label for="avatar" class="form-label">Upload Image (Optional)</label> -->
         <input type="file" accept="image/*" class="custom-file-input" id="image" name="image"></input>
         <label class="custom-file-input" for="image"></label>
         <small id="image" class="form-text text-danger">Image Upload is Optional</small>

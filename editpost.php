@@ -13,6 +13,7 @@ if(isset($_POST['submit']))
     $dob=$_POST['dob'];
     $gender=$_POST['gender'];
     $phone=$_POST['phone'];
+    $home=$_POST['home']; 
     $email=$_POST['email'];
     $treat=$_POST['treat'];
 
@@ -25,7 +26,7 @@ if(isset($_POST['submit']))
 
 
 //Call CRUD Function
-$results=$crud->editPatient($id,$fname,$lname,$dob,$gender,$phone,$email,$treat);
+$results=$crud->editPatient($id,$fname,$lname,$dob,$gender,$phone,$home,$email,$treat);
 
 
 
